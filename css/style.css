@@ -1,25 +1,32 @@
+/* ==========================================================
+   RESET & BASE
+   ========================================================== */
 * {
   margin: 0;
   padding: 0;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 2rem;
   min-height: 100vh;
   background: url('../img/houseki.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
-  display: flex;
-  justify-content: center;
 }
 
+/* ==========================================================
+   FORMULÁRIO
+   ========================================================== */
 .formulario {
   display: flex;
   flex-direction: column;
-  background: #af8ad765;
+  align-items: center;
+  background: #28497e81;
   text-align: center;
   max-width: 500px;
   padding: 2.5rem;
@@ -31,6 +38,9 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* ==========================================================
+   FORMULÁRIO DE MULTIPLICAÇÃO
+   ========================================================== */
 #multiplication-form {
   display: flex;
   justify-content: center;
@@ -39,9 +49,9 @@ h2 {
   margin: 1rem auto;
   padding: 1rem;
   max-width: 300px;
-  background-color: #fff;
   border-radius: 1rem;
   color: #333;
+  background: transparent;
 }
 
 .form-control {
@@ -56,61 +66,43 @@ h2 {
   margin-bottom: 0.6rem;
   font-size: 0.8rem;
   font-weight: bold;
+  color: #fff;
 }
 
 .form-control input {
   margin-bottom: 1rem;
   flex: 1;
   padding: 0.6rem 0.4rem;
-  border: none;
-  width: 50px;
-  border: 1px solid #333;
+  width: 70px;
+  border: 1px solid #09372D;
   border-radius: 5px;
   text-align: center;
+  background: #fff;
+  color: #333;
+  outline: none;
 }
 
-.form-control {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100px;
-  margin: 0 1rem;
-}
-
-.form-control label {
-  margin-bottom: 0.6rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.form-control input {
-  margin-bottom: 1rem;
-  flex: 1;
-  padding: 0.6rem 0.4rem;
-  border: none;
-  width: 65px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  text-align: center;
-}
-
+/* Botão do formulário */
 #multiplication-form input[type="submit"] {
   max-height: 50px;
   padding: 0.6rem 1.2rem;
   width: 200px;
-  background-color: #333;
+  background: linear-gradient(45deg, #38724A, #B0E789);
   color: #fff;
   border: 1px solid #333;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  transition: background 0.2s;
 }
 
 #multiplication-form input[type="submit"]:hover {
-  background-color: #14dccc;
-  border: 1px solid #14dccc;
+  background: linear-gradient(45deg, #037AD6, #83D4D8);
 }
 
+/* ==========================================================
+   RESULTADOS DA MULTIPLICAÇÃO
+   ========================================================== */
 #multiplication-operations {
   display: flex;
   flex-direction: column;
@@ -118,9 +110,9 @@ h2 {
   max-width: 300px;
   margin: 1rem auto;
   padding: 2rem 1rem;
-  background-color: #fff;
   border-radius: 1rem;
   color: #333;
+  background: #c0ffe583;
 }
 
 #multiplication-operations .row {
@@ -141,6 +133,13 @@ h2 {
   margin-left: 0.4rem;
 }
 
+#multiplication-operations p {
+  color: #fff;
+}
+
+/* ==========================================================
+   FRASE MOTIVACIONAL
+   ========================================================== */
 #motivational-section {
   margin-top: 2rem;
   display: flex;
@@ -150,11 +149,12 @@ h2 {
 
 #motivational-quote {
   margin-top: 1rem;
-  background: #fff;
-  color: #333;
+  background: #c0ffe583;
+  color: #fff;
   border-radius: 1rem;
   padding: 1rem 1.2rem;
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 350px;
   font-size: 1.1rem;
   box-shadow: 0 2px 8px #7c3aed20;
   min-height: 40px;
@@ -163,26 +163,22 @@ h2 {
   font-style: italic;
 }
 
+/* ==========================================================
+   BOTÃO MODERNO (REUTILIZÁVEL)
+   ========================================================== */
 .btn-modern {
   max-height: 50px;
   padding: 0.6rem 1.2rem;
   width: 200px;
-  background-color: #333;
+  background: linear-gradient(45deg, #38724A, #B0E789);
   color: #fff;
   border: 1px solid #333;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  transition: background 0.2s;
 }
 
 .btn-modern:hover {
-  max-height: 50px;
-  padding: 0.6rem 1.2rem;
-  width: 200px;
-  background-color: #14dccc;
-  color: #fff;
-  border: 1px solid #14dccc;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+  background: linear-gradient(45deg, #037AD6, #83D4D8);
 }

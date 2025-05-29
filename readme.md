@@ -117,4 +117,3 @@ Contato: [eliasmendes2908@gmail.com]
  
 > Projeto educacional para uso livre e incentivo ao aprendizado de programação e matemática.
 > Feito com ❤️ e dedicação.
->
