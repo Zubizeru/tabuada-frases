@@ -19,7 +19,7 @@ body {
 .formulario {
   display: flex;
   flex-direction: column;
-  background: rgba(44, 73, 81, 0.349);
+  background: #af8ad765;
   text-align: center;
   max-width: 500px;
   padding: 2.5rem;

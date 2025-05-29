@@ -29,7 +29,7 @@ A interface é responsiva, utiliza validação de dados, emojis em toda a experi
  
 ## Demonstração Online
  
-Acesse a versão publicada em produção pelo Vercel:[https://SEU_USUARIO.vercel.app/](https://SEU_USUARIO.vercel.app/)
+Acesse a versão publicada em produção pelo Vercel:[https://vercel.com/zubizerus-projects](https://tabuada-frases-zubizerus-projects.vercel.app/)
  
 > Substitua pelo seu link real após o deploy.
  
