@@ -118,15 +118,12 @@ h2 {
 #multiplication-operations .row {
   display: flex;
   justify-content: center;
-  border: 1px solid #ccc;
   border-bottom: none;
   padding: 0.5rem;
   width: 150px;
   text-align: center;
-}
-
-#multiplication-operations .row:last-child {
-  border-bottom: 1px solid #ccc;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 #multiplication-operations .result {
